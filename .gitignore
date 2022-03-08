@@ -1,0 +1,14 @@
+# Executables
+a.out
+
+# Object Files
+*.o
+
+# Replit 
+.replit
+replit.nix
+
+# More Replit Stuff
+.ccls-cache
+.ccls-cache/@home@runner@Grade-Program/main.cpp.blob
+
