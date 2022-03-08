@@ -5,5 +5,5 @@ A CLI grade calculator that takes input as specified and does the following
     * 35% for Midterm Exam
     * 30% for Final Exam
 
-### **Running** 
+## **Running** 
 `$make run`
