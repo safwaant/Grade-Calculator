@@ -8,6 +8,7 @@ static const double FINAL_WEIGHT = 0.35;
 
 int main() {
   cout << "Enter Your Assignment: ";
+
   double assignTotal(0.0);
   int nums(0);  
   string temp(""); 
@@ -17,14 +18,23 @@ int main() {
     assignTotal += stod(temp); 
     ++nums;  
   } 
+
   double hwAvg((assignTotal / (30 * nums)) * 100);
-  cerr << hwAvg << endl;  
   cout << "Enter your Midterm Score: ";
   double midtermScore(0.0);  
   cin >> midtermScore;
   cout << "Enter your Final score: ";
   double finalScore(0.0);
   cin >> finalScore;
-  double weightedAvg = ( (HW_WEIGHT * hwAvg) + (MIDTERM_WEIGHT * midtermScore) + (FINAL_WEIGHT * finalScore) ) / (HW_WEIGHT + MIDTERM_WEIGHT + FINAL_WEIGHT);  
-  cout << "Your course avg: " << weightedAvg;  
+  double weightedAvg = ((HW_WEIGHT * hwAvg)
+    + (MIDTERM_WEIGHT * midtermScore) 
+    + (FINAL_WEIGHT * finalScore)) 
+    / (HW_WEIGHT + MIDTERM_WEIGHT + FINAL_WEIGHT); 
+
+  cout << "-----------------------------\n" 
+  << "Your course avg: " 
+  << weightedAvg 
+  << endl 
+  << "-----------------------------" 
+  << endl;  
 }

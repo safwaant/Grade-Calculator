@@ -1,11 +1,5 @@
-CXX = clang++
-override CXXFLAGS += -g -Wno-everything
+CXX := g++
 
-SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print)
-OBJS = $(patsubst %.cpp, %.o, $(SRCS))
-
-main: $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) -o main
-
-clean:
-	rm -f $(OBJS) main
+main: $(wildcard *.cpp)
+	$(CXX) $(wildcard *.cpp)
+	./a.out

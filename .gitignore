@@ -1,3 +1,6 @@
+# VS Code Files
+.vscode
+
 # Executables
 a.out
 
@@ -8,7 +11,4 @@ a.out
 .replit
 replit.nix
 
-# More Replit Stuff
-.ccls-cache
-.ccls-cache/@home@runner@Grade-Program/main.cpp.blob
 
