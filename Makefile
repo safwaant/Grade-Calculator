@@ -3,6 +3,6 @@ CXX := g++
 compile: $(wildcard *.cpp)
 	$(CXX) $(wildcard *.cpp)
 
-main: 
+run: 
 	make compile
 	./a.out
